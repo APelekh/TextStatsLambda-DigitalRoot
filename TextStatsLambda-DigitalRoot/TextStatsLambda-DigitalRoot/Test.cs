@@ -39,13 +39,13 @@ namespace TextStatsLambda_DigitalRoot
         [Test]
         public void TextStatsTestNumberOfConsonants()
         {
-            Assert.IsTrue(Program.NumberOfWords(testString) == 13, "Incorrect number of consonants");
+            Assert.IsTrue(Program.NumberOfConsonants(testString) == 13, "Incorrect number of consonants");
         }
 
         [Test]
         public void TextStatsTestNumberOfSpecialCharacters()
         {
-            Assert.IsTrue(Program.NumberOfWords(testString) == 6, "Incorrect number of special characters");
+            Assert.IsTrue(Program.NumberOfSpecialCharacters(testString) == 6, "Incorrect number of special characters");
         }
         [Test]
         public void TextStatsTestShortestWord()
