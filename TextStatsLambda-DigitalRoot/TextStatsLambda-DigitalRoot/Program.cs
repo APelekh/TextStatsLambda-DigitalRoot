@@ -13,6 +13,11 @@ namespace TextStatsLambda_DigitalRoot
             //string text = "I'm a code ninja!";
             //TextStats(text);
             DigitalRoot("589");
+            string text = "12345";
+            foreach (char item in text)
+            {
+                Console.WriteLine(item);
+            }
             
 
             Console.ReadKey();
@@ -70,8 +75,9 @@ namespace TextStatsLambda_DigitalRoot
         /// <returns>Number of words in a string</returns>
         public static int NumberOfWords(string inputString)
         {
-            List<string> list = inputString.Split(' ').ToList(); 
-            return list.Count;
+            //List<string> list = inputString.Split(' ').ToList();
+            return inputString.Split(' ').Length;
+            
         }
         /// <summary>
         /// Calculates the number of vowels in a string
